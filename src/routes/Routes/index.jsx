@@ -24,6 +24,7 @@ import Notifications from "../../pages/Notifications/notifications";
 import Settings from "../../pages/Settings/Settings";
 import Favorites from "../../pages/Favorites/favorites";
 import Parking from "../../pages/Parking/parking";
+import CongratulationsFirst from "../../pages/CongratulationsFirst/congratulationsFirst";
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(3),
@@ -87,6 +88,12 @@ function AppRoutes() {
             path="/congratulations"
             element={
                 <Congratulations/>
+            }
+        />
+        <Route
+            path="/congratulations-first"
+            element={
+                <CongratulationsFirst/>
             }
         />
         <Route

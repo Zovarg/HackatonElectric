@@ -1,7 +1,13 @@
 import React from 'react';
 import cl from './formSend.module.css'
+import {useNavigate} from "react-router-dom";
 
 const FormSend = () => {
+    const nav = useNavigate();
+    function goToCongrat(e){
+        e.preventDefault();
+        nav("/congratulations-first");
+    };
     return (
         <div>
             <div className={cl.titleLogo}>
@@ -32,6 +38,11 @@ const FormSend = () => {
                 </div>
                 <div className={cl.inputElement}>
                     <input type="text" placeholder="СТС:"/>
+                </div>
+            </div>
+            <div className={cl.btnUpdate__wrapper}>
+                <div className={cl.btnUpdate} onClick={goToCongrat}>
+                    Сохранить
                 </div>
             </div>
         </div>
