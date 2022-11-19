@@ -13,18 +13,18 @@ const Menu = () => {
                             <div className={classes.description}>Главная</div>
                         </div>
                     </NavLink>
-                    <NavLink to="/recomendation"  className={({ isActive }) =>
+                    <NavLink to="/favorites"  className={({ isActive }) =>
                         isActive ? classes.navigate_active : classes.navigate_inactive}>
                         <div className={classes.iconContainer}>
                             <div className={classes.iconFavourite}></div>
                             <div className={classes.description}>Избранное</div>
                         </div>
                     </NavLink>
-                    <NavLink to="/posts"  className={({ isActive }) =>
+                    <NavLink to="/parking"  className={({ isActive }) =>
                         isActive ? classes.navigate_active : classes.navigate_inactive}>
                         <div className={classes.iconContainer}>
                             <div className={classes.iconBooking}></div>
-                            <div className={classes.description}>Букинг</div>
+                            <div className={classes.description}>Парковки</div>
                         </div>
                     </NavLink>
                     <NavLink to="/profile"  className={({ isActive }) =>

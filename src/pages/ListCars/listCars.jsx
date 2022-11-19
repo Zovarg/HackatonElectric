@@ -14,7 +14,7 @@ const ListCars = () => {
     };
     function routeToForm(e){
         e.preventDefault();
-        nav("/form-car");
+        nav("/form-add-car");
     };
     function routeToCarInfo(e){
         e.preventDefault();

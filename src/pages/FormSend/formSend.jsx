@@ -15,7 +15,7 @@ const FormSend = () => {
                 <div className={cl.titleLogo__text}>Внесение авто в реестр</div>
             </div>
             <div className={cl.description}>
-                После внесения в реестр, парковка  возле зарядных станций для вашего электромобиля в Краснодарском крае станет абсолютно бесплатной! Чтобы отправить данные на проверку, заполните все поля ниже, а также загрузите фото ПТС и СТС.
+
             </div>
             <div className={cl.inputsList}>
                 <div className={cl.inputElement}>

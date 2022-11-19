@@ -1,0 +1,23 @@
+.backTitle{
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.backIcon{
+
+}
+.backInfo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    /* Black */
+
+    color: #000000;
+}

@@ -1,0 +1,77 @@
+.backTitle{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.backIcon{
+
+}
+.backInfo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    /* Black */
+
+    color: #000000;
+}
+
+.inputsList{
+    margin-top: 24px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.inputElement{
+
+}
+.inputElement input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 24px;
+    height: 54px;
+    width: 100%;
+    background: white;
+    border: 1px solid #97C15B;
+    border-radius: 25px;
+
+    outline: none;
+
+}
+
+.btnUpdate__wrapper{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.btnUpdate{
+    background: #97C15B;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 25px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 73px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* White */
+    cursor: pointer;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
+}

@@ -58,7 +58,7 @@ const EditProfile = () => {
                 </div>
             </div>
             <div className={cl.btnUpdate__wrapper}>
-                <div id="savebtn" className={cl.btnUpdate} onClick={updatePerson}>
+                <div className={cl.btnUpdate} onClick={updatePerson}>
                     Сохранить
                 </div>
             </div>

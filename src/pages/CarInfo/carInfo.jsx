@@ -1,19 +1,25 @@
 import React, {useState} from 'react';
 import cl from './carInfo.module.css'
 import {useNavigate} from "react-router-dom";
+import pts from '../../images/PTS.jpg'
+import sts from '../../images/STS.jpg'
 import MyModal from "../../component/UI/MyModal/MyModal";
 
 const CarInfo = () => {
     const nav = useNavigate();
-    const [modal,setModal]=useState(false)
+    const [modalPts,setModalPts]=useState(false)
+    const [modalSts,setModalSts]=useState(false)
     function routToCarList(e){
         e.preventDefault();
         nav("/cars-list");
     };
     return (
         <div>
-            <MyModal visible={modal} setVisible={setModal}>
-
+            <MyModal visible={modalPts} setVisible={setModalPts}>
+                <img src={pts} alt=""/>
+            </MyModal>
+            <MyModal visible={modalSts} setVisible={setModalSts}>
+                <img src={sts} alt=""/>
             </MyModal>
             <div className={cl.backTitle}>
                 <div className={cl.backIcon} onClick={routToCarList}>
@@ -33,10 +39,10 @@ const CarInfo = () => {
                 <div className={cl.inputElement}>
                     <input type="text" placeholder="Тип двигателя:"/>
                 </div>
-                <div className={cl.inputElementImg} onClick={()=>setModal(true)}>
+                <div className={cl.inputElementImg} onClick={()=>setModalPts(true)}>
                     <input type="text" placeholder="ПТС:"/>
                 </div>
-                <div className={cl.inputElementImg}>
+                <div className={cl.inputElementImg} onClick={()=>setModalSts(true)}>
                     <input type="text" placeholder="СТС:"/>
                 </div>
             </div>

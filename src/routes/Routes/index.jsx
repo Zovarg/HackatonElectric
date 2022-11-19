@@ -18,6 +18,12 @@ import EditProfile from "../../pages/EditProfile/editProfile";
 import ListCars from "../../pages/ListCars/listCars";
 import CarInfo from "../../pages/CarInfo/carInfo";
 import FormSend from "../../pages/FormSend/formSend";
+import FormAddCar from "../../pages/FormAddCar/FormAddCar";
+import Congratulations from "../../pages/Congratulations/Congratulations";
+import Notifications from "../../pages/Notifications/notifications";
+import Settings from "../../pages/Settings/Settings";
+import Favorites from "../../pages/Favorites/favorites";
+import Parking from "../../pages/Parking/parking";
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(3),
@@ -69,6 +75,42 @@ function AppRoutes() {
             path="/form-car"
             element={
                 <FormSend/>
+            }
+        />
+        <Route
+            path="/form-add-car"
+            element={
+                <FormAddCar/>
+            }
+        />
+        <Route
+            path="/congratulations"
+            element={
+                <Congratulations/>
+            }
+        />
+        <Route
+            path="/notifications"
+            element={
+                <Notifications/>
+            }
+        />
+        <Route
+            path="/settings"
+            element={
+                <Settings/>
+            }
+        />
+        <Route
+            path="/favorites"
+            element={
+                <Favorites/>
+            }
+        />
+        <Route
+            path="/parking"
+            element={
+                <Parking/>
             }
         />
       <Route

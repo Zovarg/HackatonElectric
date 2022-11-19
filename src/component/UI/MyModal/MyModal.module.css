@@ -19,4 +19,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.btnUpdate__wrapper{
+    width: 80%;
+}
+.btnUpdate{
+    background: #97C15B;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 25px;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* White */
+    cursor: pointer;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
 }

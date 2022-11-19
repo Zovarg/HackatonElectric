@@ -14,6 +14,11 @@ const MyModal = ({children, visible, setVisible}) => {
             <div className={cl.myModalContent} onClick={event => event.stopPropagation()}>
                 {children}
             </div>
+             <div className={cl.btnUpdate__wrapper}>
+                <div className={cl.btnUpdate} onClick={()=>setVisible(false)}>
+                   Закрыть
+                </div>
+            </div>
         </div>
     );
 };

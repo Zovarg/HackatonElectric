@@ -10,7 +10,7 @@ function Home() {
 
     function next(e){
         e.preventDefault();
-        nav("/map");
+        nav("/form-car");
     };
   return (
           <div className={cl.container}>
