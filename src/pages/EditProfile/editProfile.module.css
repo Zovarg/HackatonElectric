@@ -1,0 +1,197 @@
+.backTitle{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.backIcon{
+
+}
+.backInfo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    /* Black */
+
+    color: #000000;
+}
+.formList{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+.formInputCity{
+
+}
+.formInputCity input{
+    background: #F5F5F5;
+    border: 1px solid #97C15B;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #000000;
+}
+.formInputNick input{
+    background: #F5F5F5;
+    border: 1px solid #97C15B;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #000000;
+}
+.formInputFio input{
+    background: #F5F5F5;
+    border: 0;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #AAAAAA;
+}
+.formInputDate input{
+    background: #F5F5F5;
+    border: 0;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #AAAAAA;
+    background-image: url("../../images/date-input.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+.formInputGender input{
+    background: #F5F5F5;
+    border: 0;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #AAAAAA;
+    background-image: url("../../images/gender-input.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+.formInputEmail input{
+    background: #F5F5F5;
+    border: 0;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #AAAAAA;
+    background-image: url("../../images/email-input.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+.formInputTelephone input{
+    background: #F5F5F5;
+    border: 0;
+    border-radius: 25px;
+    height: 54px;
+    outline: none;
+    width: 100%;
+    padding-left: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    /* Black */
+
+    color: #AAAAAA;
+    background-image: url("../../images/phone-input.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+.btnUpdate__wrapper{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.btnUpdate{
+    background: #97C15B;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 25px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* White */
+    cursor: pointer;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
+}

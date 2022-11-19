@@ -1,0 +1,78 @@
+.logoTitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+    /* Black */
+
+    color: #000000;
+    margin-left: 19px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.imageContainer{
+    position: relative;
+}
+.editIcon{
+    cursor: pointer;
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+}
+.fio{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Black */
+
+    color: #000000;
+}
+.mail{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Black */
+
+    color: #000000;
+}
+.options {
+    margin: 16px 27px 0;
+    padding-top: 21px;
+    border-top: 1px solid #E1E1E1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.option{
+    cursor: pointer;
+    display: flex;
+    gap:20px
+}
+
+.exit{
+    color: #E52748;
+}

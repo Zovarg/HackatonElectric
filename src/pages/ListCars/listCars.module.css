@@ -1,0 +1,103 @@
+.backTitle{
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.backIcon{
+
+}
+.backInfo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    /* Black */
+
+    color: #000000;
+}
+.carsList{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 0 20px;
+}
+.carElement{
+    background: #FFFFFF;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 20px;
+    height: 118px;
+    padding-left:12px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carLeft{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.tesla{
+
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.model{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* Black */
+
+    color: #000000;
+}
+.characters{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    /* Black */
+
+    color: #000000;
+}
+.btnUpdate__wrapper{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.btnUpdate{
+    background: #97C15B;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 25px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* White */
+    cursor: pointer;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
+}

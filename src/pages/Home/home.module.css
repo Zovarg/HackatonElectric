@@ -1,0 +1,65 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    padding: 40px 0;
+    gap:50px;
+}
+.title{
+}
+.welcomeTitle__top{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
+    /* Black */
+
+    color: #000000;
+}
+.welcomeTitle__bottom{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    color: #000000;
+    text-align: center;
+}
+.welcomeTitle__bottom span{
+    color:#97C15B;
+
+}
+.welcomeLogo{
+
+}
+.welcomeButton{
+    cursor: pointer;
+    border: 2px solid #97C15B;
+    border-radius: 30px;
+    width: 303px;
+    padding: 10px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+
+    /* Green */
+
+    color: #97C15B;
+}
+.gospart{
+    color:#E52748;
+}
+.servicespart{
+    color:#0A4FA0;
+}
