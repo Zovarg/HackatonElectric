@@ -40,9 +40,10 @@ function Login() {
   const onSubmit = async (data) => {
     try {
       setIsLoading(true);
-      const { data: loginData } = await api.auth.login(data);
+      let info=data.data
+      console.log({'user':{...data}})
+      const { data: loginData } = await api.auth.login({'user':{...data}});
       console.log(loginData)
-      console.log('ЧТо-то')
      /* auth.setToken(loginData.access);*/
       /*auth.setRefreshToken(loginData.refresh)
       const { data: userData } = await api.auth.getProfile();
@@ -71,7 +72,7 @@ function Login() {
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Controller
-                name="username"
+                name="email"
 
                 control={control}
                 defaultValue=""

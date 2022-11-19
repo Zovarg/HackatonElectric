@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 import api from "../index";
 
 const axiosInstance = axios.create({
-    baseURL: "https://klimrus61.pythonanywhere.com",
+    baseURL: "http://37.140.241.46:8002/api",
 });
 
 axiosInstance.interceptors.request.use(

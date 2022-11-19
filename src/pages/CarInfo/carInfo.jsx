@@ -15,10 +15,10 @@ const CarInfo = () => {
     };
     return (
         <div>
-            <MyModal visible={modalPts} setVisible={setModalPts}>
+            <MyModal visible={modalPts} setVisible={setModalPts} info={'ПТС'}>
                 <img src={pts} alt=""/>
             </MyModal>
-            <MyModal visible={modalSts} setVisible={setModalSts}>
+            <MyModal visible={modalSts} setVisible={setModalSts} info={'СТС'}>
                 <img src={sts} alt=""/>
             </MyModal>
             <div className={cl.backTitle}>

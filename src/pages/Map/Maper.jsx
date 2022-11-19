@@ -4,7 +4,9 @@ import cl from './Maper.module.css'
 import {useFetching} from "../../hooks/useFetching";
 import api from "../../services/api";
 import photo from '../../images/photo-map.png'
+import logo from '../../images/logoLoad.png'
 import Menu from "../../component/UI/Menu/Menu";
+import {ColorRing} from "react-loader-spinner";
 const Maper = () => {
 
 
@@ -40,17 +42,36 @@ const Maper = () => {
         setPosts([...posts, ...loginData])
     })
 
-    let [load, setLoad]=useState(null)
+    let [load, setLoad]=useState(true)
+
 
 
     useEffect(() => {
         fetchPosts()
+        timer()
     }, [])
     let residentialComplexes = posts
+
+    const timer=()=>{
+        setTimeout(()=>{
+            setLoad(false)
+        },4000)
+    }
 
     return (
         <div className={cl.map_background}>
             <Menu/>
+            {load?<img className={cl.img} src={logo} alt=""/>:<div></div>}
+
+            <ColorRing
+                visible={load}
+                height="200"
+                width="200"
+                ariaLabel="blocks-loading"
+                wrapperStyle={{}}
+                wrapperClass={cl.load__wrapper}
+                colors={['#97C15B', '#97C15B', '#97C15B', '#97C15B', '#97C15B']}
+            />
             <YMaps>
                 <Map className={cl.map_background} defaultState={mapData}>
                     <GeolocationControl options={{
