@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cl from './carInfo.module.css'
 import {useNavigate} from "react-router-dom";
+import MyModal from "../../component/UI/MyModal/MyModal";
 
 const CarInfo = () => {
     const nav = useNavigate();
+    const [modal,setModal]=useState(false)
     function routToCarList(e){
         e.preventDefault();
         nav("/cars-list");
     };
     return (
         <div>
+            <MyModal visible={modal} setVisible={setModal}>
+
+            </MyModal>
             <div className={cl.backTitle}>
                 <div className={cl.backIcon} onClick={routToCarList}>
                     <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,10 +33,10 @@ const CarInfo = () => {
                 <div className={cl.inputElement}>
                     <input type="text" placeholder="Тип двигателя:"/>
                 </div>
-                <div className={cl.inputElement}>
+                <div className={cl.inputElementImg} onClick={()=>setModal(true)}>
                     <input type="text" placeholder="ПТС:"/>
                 </div>
-                <div className={cl.inputElement}>
+                <div className={cl.inputElementImg}>
                     <input type="text" placeholder="СТС:"/>
                 </div>
             </div>
