@@ -44,7 +44,7 @@ function Login() {
       console.log({'user':{...data}})
       const { data: loginData } = await api.auth.login({'user':{...data}});
       console.log(loginData)
-     /* auth.setToken(loginData.access);*/
+      auth.setToken(loginData.token);
       /*auth.setRefreshToken(loginData.refresh)
       const { data: userData } = await api.auth.getProfile();
       auth.setUser(userData);*/
