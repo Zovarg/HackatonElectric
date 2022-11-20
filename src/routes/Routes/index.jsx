@@ -55,9 +55,9 @@ function AppRoutes() {
       } />
         <Route path="/admin" element={
 
-            <AdminRoute>
+           /* <AdminRoute>*/
                 <Admin />
-            </AdminRoute>
+          /*  </AdminRoute>*/
 
         } />
         <Route

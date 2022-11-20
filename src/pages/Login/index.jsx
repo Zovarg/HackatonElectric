@@ -14,6 +14,7 @@ import api from "../../services/api";
 import useAuth from "../../hooks/useAuth";
 import { useState } from "react";
 import logo from '../../images/Preview.svg';
+import {useNavigate} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,10 @@ function Login() {
   const classes = useStyles();
   const [isLoading, setIsLoading] = useState(false);
   const auth = useAuth();
-
+  const nav = useNavigate();
+  function goToAdmin(){
+    nav("/admin");
+  };
   const {
     control,
     handleSubmit,
@@ -38,6 +42,7 @@ function Login() {
   });
 
   const onSubmit = async (data) => {
+    goToAdmin()
     try {
       setIsLoading(true);
       let info=data.data
