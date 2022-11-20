@@ -1,0 +1,137 @@
+.myModal{
+    position: fixed;
+    z-index: 50;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0,0,0, 0.5);
+}
+
+.myModalContent{
+    padding: 10px 9px 0 20px;
+    background: white;
+    border: 3px solid #97C15B;
+    border-radius: 20px;
+    min-width: 250px;
+}
+
+.myModal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btnUpdate__wrapper{
+    width: 80%;
+}
+.btnUpdate{
+    background: #97C15B;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 25px;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* White */
+    cursor: pointer;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
+}
+.title{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+
+    /* Black */
+
+    color: #000000;
+}
+.titleDescr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+}
+.titleImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.notLoad{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.loadButtonDisbl__wrapper{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.loadButtonDisbl{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Gray 2 */
+
+    color: #828282;
+
+    background: #FFFFFF;
+    border: 2px solid #828282;
+    border-radius: 25px;
+    width: 282px;
+    height: 56px;
+}
+.loadButtonActive{
+    background: #97C15B;
+    /* Green */
+
+    border: 2px solid #97C15B;
+    border-radius: 25px;
+    width: 282px;
+    height: 56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    /* White */
+
+    color: #FFFFFF;
+
+    /* Green */
+
+    border: 2px solid #97C15B;
+}

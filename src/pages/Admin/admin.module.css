@@ -365,3 +365,123 @@
     color: #FFFFFF;
     max-width: 186px;
 }
+.registry{
+    margin-top: 36px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 30px 30px 20px 30px;
+}
+.selectIcon{
+    position: absolute;
+    right: 20px;
+}
+.RegistryTitle{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    color: #222222;
+}
+.headerRegistry{
+    background: #4B49AC;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 50px;
+    align-items: center;
+    padding-left: 41px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #FFFFFF;
+}
+.RegistryList{
+
+}
+.RegistryElement{
+    position: relative;
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 21px;
+    height: 60px;
+    align-items: center;
+}
+.RegistryElement__first{
+    display: flex;
+    gap: 10px;
+}
+.Shadow{
+    background: linear-gradient(180deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+    height: 10px;
+}
+.openElement{
+    padding: 16px;
+    background: rgba(75, 73, 172, 0.04);
+    border-radius: 14px;
+    height: 190px;
+    display: flex;
+}
+.openElemnt__first{
+    background: #4B49AC;
+    border-radius: 14px;
+    height: 158px;
+    padding: 20px 0 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 285px;
+}
+.openElemnt__second{
+    border-radius: 14px;
+    height: 158px;
+    padding: 20px 0 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 285px;
+}
+.openElement_block{
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+}
+.TopHeaderOpen{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: rgba(255,255,255,0.5);
+}
+.BottomHeaderOpen{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+.openElemnt__second .openElement_block{
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+}
+.openElemnt__second .TopHeaderOpen{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #222222;
+}
+.openElemnt__second .BottomHeaderOpen{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #222222;
+}

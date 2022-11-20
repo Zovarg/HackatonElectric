@@ -30,7 +30,7 @@
     gap: 30px;
 }
 .inputElement{
-
+    position: relative;
 }
 .inputElement input{
     font-family: 'Montserrat';
@@ -74,4 +74,9 @@
     cursor: pointer;
     color: #FFFFFF;
     filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
+}
+.iconInput{
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }

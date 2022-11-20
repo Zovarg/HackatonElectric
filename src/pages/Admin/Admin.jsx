@@ -400,6 +400,181 @@ export const Admin = () => {
                         </div>
                     </div>
                 </div>
+                <div className={cl.registry}>
+                    <div className={cl.RegistryTitle}>Реестр электромобилей</div>
+                    <div className={cl.headerRegistry}>
+                        <div>Госномер</div>
+                        <div>Марка</div>
+                        <div>Тип двигателя</div>
+                        <div>Владелец</div>
+                        <div>Статус</div>
+                        <div>Активирован</div>
+                    </div>
+                    <div className={cl.RegistryList}>
+                        <div className={cl.RegistryElement}>
+                            <div className={cl.selectIcon}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0837 6.65737C16.972 6.54834 16.8222 6.4873 16.6662 6.4873C16.5101 6.4873 16.3603 6.54834 16.2487 6.65737L9.99991 12.7486L3.75241 6.65737C3.64079 6.54834 3.49094 6.4873 3.33491 6.4873C3.17887 6.4873 3.02903 6.54834 2.91741 6.65737C2.86298 6.71037 2.81972 6.77373 2.79018 6.84372C2.76064 6.91371 2.74542 6.9889 2.74542 7.06487C2.74542 7.14084 2.76064 7.21604 2.79018 7.28602C2.81972 7.35601 2.86298 7.41938 2.91741 7.47237L9.56366 13.9499C9.68037 14.0636 9.83692 14.1273 9.99991 14.1273C10.1629 14.1273 10.3194 14.0636 10.4362 13.9499L17.0824 7.47237C17.1368 7.41938 17.1801 7.35601 17.2096 7.28602C17.2392 7.21604 17.2544 7.14084 17.2544 7.06487C17.2544 6.9889 17.2392 6.91371 17.2096 6.84372C17.1801 6.77373 17.1368 6.71037 17.0824 6.65737L17.0837 6.65737Z" fill="black"/>
+                            </svg>
+                            </div>
+                            <div className={cl.RegistryElement__first}>
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+                                </svg></div>
+                                <div>В 425 ЕН 193</div>
+                            </div>
+                            <div>Tesla Model Y</div>
+                            <div>Электрический</div>
+                            <div>Ганлин С.</div>
+                            <div>Подтверждение</div>
+                            <div>-</div>
+                        </div>
+                        <div className={cl.Shadow}></div>
+
+
+                        <div className={cl.RegistryElement}>
+                            <div className={cl.selectIcon}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0837 6.65737C16.972 6.54834 16.8222 6.4873 16.6662 6.4873C16.5101 6.4873 16.3603 6.54834 16.2487 6.65737L9.99991 12.7486L3.75241 6.65737C3.64079 6.54834 3.49094 6.4873 3.33491 6.4873C3.17887 6.4873 3.02903 6.54834 2.91741 6.65737C2.86298 6.71037 2.81972 6.77373 2.79018 6.84372C2.76064 6.91371 2.74542 6.9889 2.74542 7.06487C2.74542 7.14084 2.76064 7.21604 2.79018 7.28602C2.81972 7.35601 2.86298 7.41938 2.91741 7.47237L9.56366 13.9499C9.68037 14.0636 9.83692 14.1273 9.99991 14.1273C10.1629 14.1273 10.3194 14.0636 10.4362 13.9499L17.0824 7.47237C17.1368 7.41938 17.1801 7.35601 17.2096 7.28602C17.2392 7.21604 17.2544 7.14084 17.2544 7.06487C17.2544 6.9889 17.2392 6.91371 17.2096 6.84372C17.1801 6.77373 17.1368 6.71037 17.0824 6.65737L17.0837 6.65737Z" fill="black"/>
+                            </svg>
+                            </div>
+                            <div className={cl.RegistryElement__first}>
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+                                </svg></div>
+                                <div>K 319 РП 193</div>
+                            </div>
+                            <div>Tesla Model S</div>
+                            <div>Электрический</div>
+                            <div>Бородач В.</div>
+                            <div>Активен</div>
+                            <div>18.11.2022</div>
+                        </div>
+                        <div className={cl.Shadow}></div>
+
+
+                        {/*<div className={cl.openElement}>
+                            <div className={cl.openElemnt__first}>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Зарегистрирован</div>
+                                    <div className={cl.BottomHeaderOpen}>18/11/2022</div>
+                                </div>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Марка</div>
+                                    <div className={cl.BottomHeaderOpen}>Tesla S</div>
+                                </div>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Всего ТС</div>
+                                    <div className={cl.BottomHeaderOpen}>2</div>
+                                </div>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Тип двигателя</div>
+                                    <div className={cl.BottomHeaderOpen}>Электро</div>
+                                </div>
+                            </div>
+                            <div className={cl.openElemnt__second}>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Зарегистрирован</div>
+                                    <div className={cl.BottomHeaderOpen}>18/11/2022</div>
+                                </div>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Марка</div>
+                                    <div className={cl.BottomHeaderOpen}>Tesla S</div>
+                                </div>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Всего ТС</div>
+                                    <div className={cl.BottomHeaderOpen}>2</div>
+                                </div>
+                                <div className={cl.openElement_block}>
+                                    <div className={cl.TopHeaderOpen}>Тип двигателя</div>
+                                    <div className={cl.BottomHeaderOpen}>Электро</div>
+                                </div>
+                            </div>
+                        </div>
+*/}
+
+
+                        <div className={cl.RegistryElement}>
+                            <div className={cl.selectIcon}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0837 6.65737C16.972 6.54834 16.8222 6.4873 16.6662 6.4873C16.5101 6.4873 16.3603 6.54834 16.2487 6.65737L9.99991 12.7486L3.75241 6.65737C3.64079 6.54834 3.49094 6.4873 3.33491 6.4873C3.17887 6.4873 3.02903 6.54834 2.91741 6.65737C2.86298 6.71037 2.81972 6.77373 2.79018 6.84372C2.76064 6.91371 2.74542 6.9889 2.74542 7.06487C2.74542 7.14084 2.76064 7.21604 2.79018 7.28602C2.81972 7.35601 2.86298 7.41938 2.91741 7.47237L9.56366 13.9499C9.68037 14.0636 9.83692 14.1273 9.99991 14.1273C10.1629 14.1273 10.3194 14.0636 10.4362 13.9499L17.0824 7.47237C17.1368 7.41938 17.1801 7.35601 17.2096 7.28602C17.2392 7.21604 17.2544 7.14084 17.2544 7.06487C17.2544 6.9889 17.2392 6.91371 17.2096 6.84372C17.1801 6.77373 17.1368 6.71037 17.0824 6.65737L17.0837 6.65737Z" fill="black"/>
+                            </svg>
+                            </div>
+                            <div className={cl.RegistryElement__first}>
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+                                </svg></div>
+                                <div>Н 300 ОЛ 193</div>
+                            </div>
+                            <div>BMW IX</div>
+                            <div>Электрический</div>
+                            <div>Светлякова Л.</div>
+                            <div>Подтверждение</div>
+                            <div>-</div>
+                        </div>
+                        <div className={cl.Shadow}></div>
+
+
+
+                        <div className={cl.RegistryElement}>
+                            <div className={cl.selectIcon}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0837 6.65737C16.972 6.54834 16.8222 6.4873 16.6662 6.4873C16.5101 6.4873 16.3603 6.54834 16.2487 6.65737L9.99991 12.7486L3.75241 6.65737C3.64079 6.54834 3.49094 6.4873 3.33491 6.4873C3.17887 6.4873 3.02903 6.54834 2.91741 6.65737C2.86298 6.71037 2.81972 6.77373 2.79018 6.84372C2.76064 6.91371 2.74542 6.9889 2.74542 7.06487C2.74542 7.14084 2.76064 7.21604 2.79018 7.28602C2.81972 7.35601 2.86298 7.41938 2.91741 7.47237L9.56366 13.9499C9.68037 14.0636 9.83692 14.1273 9.99991 14.1273C10.1629 14.1273 10.3194 14.0636 10.4362 13.9499L17.0824 7.47237C17.1368 7.41938 17.1801 7.35601 17.2096 7.28602C17.2392 7.21604 17.2544 7.14084 17.2544 7.06487C17.2544 6.9889 17.2392 6.91371 17.2096 6.84372C17.1801 6.77373 17.1368 6.71037 17.0824 6.65737L17.0837 6.65737Z" fill="black"/>
+                            </svg>
+                            </div>
+                            <div className={cl.RegistryElement__first}>
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+                                </svg></div>
+                                <div>Е 229 НО 123</div>
+                            </div>
+                            <div>Tesla X</div>
+                            <div>Электрический</div>
+                            <div>Остапов В.</div>
+                            <div>Активен</div>
+                            <div>16.11.2022</div>
+                        </div>
+                        <div className={cl.Shadow}></div>
+
+
+                        <div className={cl.RegistryElement}>
+                            <div className={cl.selectIcon}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0837 6.65737C16.972 6.54834 16.8222 6.4873 16.6662 6.4873C16.5101 6.4873 16.3603 6.54834 16.2487 6.65737L9.99991 12.7486L3.75241 6.65737C3.64079 6.54834 3.49094 6.4873 3.33491 6.4873C3.17887 6.4873 3.02903 6.54834 2.91741 6.65737C2.86298 6.71037 2.81972 6.77373 2.79018 6.84372C2.76064 6.91371 2.74542 6.9889 2.74542 7.06487C2.74542 7.14084 2.76064 7.21604 2.79018 7.28602C2.81972 7.35601 2.86298 7.41938 2.91741 7.47237L9.56366 13.9499C9.68037 14.0636 9.83692 14.1273 9.99991 14.1273C10.1629 14.1273 10.3194 14.0636 10.4362 13.9499L17.0824 7.47237C17.1368 7.41938 17.1801 7.35601 17.2096 7.28602C17.2392 7.21604 17.2544 7.14084 17.2544 7.06487C17.2544 6.9889 17.2392 6.91371 17.2096 6.84372C17.1801 6.77373 17.1368 6.71037 17.0824 6.65737L17.0837 6.65737Z" fill="black"/>
+                            </svg>
+                            </div>
+                            <div className={cl.RegistryElement__first}>
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+                                </svg></div>
+                                <div>Г 110 ДЖ 193</div>
+                            </div>
+                            <div>Ford Fusion Energy</div>
+                            <div>Гибрид</div>
+                            <div>Петров Л.</div>
+                            <div>Активен</div>
+                            <div>16.11.2022</div>
+                        </div>
+                        <div className={cl.Shadow}></div>
+
+
+
+                        <div className={cl.RegistryElement}>
+                            <div className={cl.selectIcon}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0837 6.65737C16.972 6.54834 16.8222 6.4873 16.6662 6.4873C16.5101 6.4873 16.3603 6.54834 16.2487 6.65737L9.99991 12.7486L3.75241 6.65737C3.64079 6.54834 3.49094 6.4873 3.33491 6.4873C3.17887 6.4873 3.02903 6.54834 2.91741 6.65737C2.86298 6.71037 2.81972 6.77373 2.79018 6.84372C2.76064 6.91371 2.74542 6.9889 2.74542 7.06487C2.74542 7.14084 2.76064 7.21604 2.79018 7.28602C2.81972 7.35601 2.86298 7.41938 2.91741 7.47237L9.56366 13.9499C9.68037 14.0636 9.83692 14.1273 9.99991 14.1273C10.1629 14.1273 10.3194 14.0636 10.4362 13.9499L17.0824 7.47237C17.1368 7.41938 17.1801 7.35601 17.2096 7.28602C17.2392 7.21604 17.2544 7.14084 17.2544 7.06487C17.2544 6.9889 17.2392 6.91371 17.2096 6.84372C17.1801 6.77373 17.1368 6.71037 17.0824 6.65737L17.0837 6.65737Z" fill="black"/>
+                            </svg>
+                            </div>
+                            <div className={cl.RegistryElement__first}>
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+                                </svg></div>
+                                <div>К 910 ЭЧ 123</div>
+                            </div>
+                            <div>BMW IX</div>
+                            <div>Электрический</div>
+                            <div>Свиридова А.</div>
+                            <div>Активен</div>
+                            <div>18.11.2022</div>
+                        </div>
+                        <div className={cl.Shadow}></div>
+
+                    </div>
+                </div>
             </div>
         </div>
         </div>
