@@ -75,3 +75,11 @@
     color: #FFFFFF;
     filter: drop-shadow(4px 8px 24px rgba(151, 193, 91, 0.25));
 }
+.dropArea{
+    width: 80vw;
+    height: 80vh;
+    border: 5px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

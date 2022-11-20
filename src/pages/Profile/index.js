@@ -4,11 +4,10 @@ import logo from "../../images/profile-icon.svg"
 import photo from "../../images/profilePhoto.png"
 import {useNavigate} from "react-router-dom";
 import Menu from "../../component/UI/Menu/Menu";
-import Notifications from "../Notifications/notifications";
+
 
 function Profile() {
   const nav = useNavigate();
-
   function onLogOut(e){
     e.preventDefault();
     nav("/");
@@ -25,7 +24,6 @@ function Profile() {
   function mySettings(){
     nav("/settings");
   };
-
 
   return (
     <div>

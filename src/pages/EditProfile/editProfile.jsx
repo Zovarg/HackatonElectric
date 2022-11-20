@@ -1,18 +1,23 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import cl from './editProfile.module.css';
 import {useNavigate} from "react-router-dom";
+import {useFetching} from "../../hooks/useFetching";
+import api from "../../services/api";
 const EditProfile = () => {
     const nav = useNavigate();
-
-    const [person, setPerson]=useState({
-        city:'',
-        fio:'Бородач Иван Иванович',
-        nick:'Borodach',
-        date:'12.10.1989',
-        gender:'Мужской',
-        email:'borodach@mail.ru',
-        telephone:'+79181174098',
+    const [person, setPerson]=useState({})
+    const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
+        const { data: loginData } = await api.auth.getProfile();
+        setPerson(loginData)
     })
+    const [fetchDate, isDateLoading, dateError] = useFetching(async (person) => {
+        console.log(person)
+        const { data: loginData } = await api.auth.saveProfile(person);
+    })
+
+    useEffect(()=>{
+        fetchPosts()
+    },[])
 
 
     function routToProfile(e){
@@ -21,7 +26,8 @@ const EditProfile = () => {
     };
     const updatePerson = (e)=>{
         e.preventDefault();
-        nav("/profile");
+        fetchDate(person);
+
     }
 
     return (
@@ -42,10 +48,10 @@ const EditProfile = () => {
                     <input value={person.nick} onChange={e=>setPerson({...person, nick:e.target.value})} type="text" placeholder="Никнэйм"/>
                 </div>
                 <div className={cl.formInputFio}>
-                    <input disabled value={person.fio} onChange={e=>setPerson({...person, fio:e.target.value})} type="text" placeholder="ФИО"/>
+                    <input disabled value={person.full_name} onChange={e=>setPerson({...person, fio:e.target.value})} type="text" placeholder="ФИО"/>
                 </div>
                 <div className={cl.formInputDate}>
-                    <input disabled value={person.date} onChange={e=>setPerson({...person, date:e.target.value})} type="text" placeholder="Дата рождения"/>
+                    <input disabled value={person.birth} onChange={e=>setPerson({...person, date:e.target.value})} type="text" placeholder="Дата рождения"/>
                 </div>
                 <div className={cl.formInputGender}>
                     <input disabled value={person.gender} onChange={e=>setPerson({...person, gender:e.target.value})} type="text" placeholder="Пол"/>
@@ -54,7 +60,7 @@ const EditProfile = () => {
                     <input disabled value={person.email} onChange={e=>setPerson({...person, email:e.target.value})} type="email" placeholder="Почта"/>
                 </div>
                 <div className={cl.formInputTelephone}>
-                    <input disabled value={person.telephone} onChange={e=>setPerson({...person, telephone:e.target.value})} type="text" placeholder="Телефон"/>
+                    <input disabled value={person.phone} onChange={e=>setPerson({...person, telephone:e.target.value})} type="text" placeholder="Телефон"/>
                 </div>
             </div>
             <div className={cl.btnUpdate__wrapper}>

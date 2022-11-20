@@ -1,15 +1,46 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cl from './formSend.module.css'
 import {useNavigate} from "react-router-dom";
 
 const FormSend = () => {
+    const [drag,setDrag]=useState(false)
     const nav = useNavigate();
     function goToCongrat(e){
         e.preventDefault();
         nav("/congratulations-first");
     };
+    function dragStartHandler(e) {
+        e.preventDefault()
+        setDrag(true)
+    }
+    function dragLeaveHandler(e) {
+        e.preventDefault()
+        setDrag(false)
+    }
+    function onDropHandler(e) {
+        e.preventDefault()
+        let files = [...e.dataTransfer.files]
+        console.log(files)
+        setDrag(false)
+    }
     return (
         <div>
+            {drag
+                ?<div
+                    className={cl.dropArea}
+                    onDragStart={e=>dragStartHandler(e)}
+                    onDragLeave={e=>dragLeaveHandler(e)}
+                    onDragOver={e=> dragStartHandler(e)}
+                    onDrop={e=>onDropHandler(e)}
+                >Отпустите файлы, чтобы  загрузить
+            </div>
+
+                :<div
+                onDragStart={e=>dragStartHandler(e)}
+                onDragLeave={e=>dragLeaveHandler(e)}
+                onDragOver={e=> dragStartHandler(e)}
+                onDrop={e=>onDropHandler(e)}
+                >Перетащите файлы, чтобы  загрузить</div>}
             <div className={cl.titleLogo}>
                 <div>
                 <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
